@@ -1,71 +1,68 @@
 ---
 marp: true
-theme: custom-theme
+theme: custom
 paginate: true
-footer: "Ayush Dayal — 23f2001288@ds.study.iitm.ac.in"
+footer: "23f2001288@ds.study.iitm.ac.in"
 ---
 
-<!-- Custom Theme -->
+<!-- Define a custom theme via style -->
 <style>
+/* Custom theme variables */
+:root {
+  --color-background: #f5f7fa;
+  --color-accent: #1976d2;
+  --color-text: #333;
+}
+
 section {
+  background: var(--color-background);
   font-family: "Inter", sans-serif;
+  color: var(--color-text);
 }
 
 h1 {
-  color: #1e88e5;
+  color: var(--color-accent);
 }
 
-p {
-  font-size: 1.1em;
-}
-
-footer {
-  color: #777;
-  font-size: 0.8em;
-}
-
-:root {
-  --bg-gradient: linear-gradient(135deg, #1e3c72, #2a5298);
-}
-
-section.custom-bg {
-  background: var(--bg-gradient);
+.custom-bg {
+  background: url('https://picsum.photos/1600/900') center/cover no-repeat;
   color: white;
 }
 </style>
 
 # Product Documentation  
-### Technical Writer: Ayush Dayal  
-#### Email: **23f2001288@ds.study.iitm.ac.in**
+### Prepared by: Ayush Dayal  
+### Email: **23f2001288@ds.study.iitm.ac.in**
 
 ---
 
-# Overview
+# Version-Controlled Documentation
 
-- Version-controlled documentation  
-- Marp-based slides  
-- Exportable to PDF / PPTX / HTML  
-- Custom themes & math support  
+- Stored in GitHub  
+- Easy collaboration  
+- Converts to PDF, PPTX, HTML using Marp CLI  
+- Theme-based styling  
 
 ---
 
 <!-- Slide with Background Image -->
-<!-- You may replace the path with a URL or repo asset -->
-![bg](https://picsum.photos/1600/900)
+<!-- Marp background directive -->
+<!-- We use a class here to ensure compatibility -->
+<section class="custom-bg">
 
-# Background Image Slide
-### Custom visuals enhance documentation clarity.
+# Background Image Slide  
+Enhances visual clarity and engagement.
+
+</section>
 
 ---
 
-# Algorithmic Complexity
+# Mathematical Example
 
-Using Marp's KaTeX math:
-
-Time complexity of merge sort:
+Time complexity of Merge Sort:
 
 \[
-T(n) = 2T(n/2) + O(n)
+T(n) = 2T\left(\frac{n}{2}\right) + O(n)
 \]
 
 \[
@@ -75,21 +72,24 @@ T(n) = O(n \log n)
 ---
 
 # Custom Themed Slide
-class: custom-bg
 
-# Custom Theme in Action
-This slide uses a gradient background from the custom theme.
+<section style="background: linear-gradient(135deg, #1565c0, #42a5f5); color: white; padding: 50px;">
+
+# Custom Gradient Theme  
+This slide uses custom inline Marp styling.
+
+</section>
 
 ---
 
-# Version Control Workflow
+# Summary
 
-1. Store docs in GitHub  
-2. Use pull requests for updates  
-3. Export via Marp CLI  
-4. Automate via CI/CD  
+- Marp enables version-controlled documentation  
+- Custom themes improve maintainability  
+- CLI exports PDFs for release notes  
+- Backgrounds & equations improve clarity  
 
 ---
 
 # Thank You  
-### Documentation powered by **Marp + GitHub**
+### Documentation Powered by **Marp + GitHub**
