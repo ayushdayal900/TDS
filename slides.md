@@ -82,13 +82,17 @@ This slide uses custom inline Marp styling.
 
 ---
 
+---
+background: url("image.png")
+---
+
+
 # Summary
 
 - Marp enables version-controlled documentation  
 - Custom themes improve maintainability  
 - CLI exports PDFs for release notes  
 - Backgrounds & equations improve clarity  
-
 ---
 
 # Thank You  
