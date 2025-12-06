@@ -83,8 +83,23 @@ This slide uses custom inline Marp styling.
 ---
 
 ---
-background: url("image.png")
+marp: true
+theme: default
+paginate: true
+footer: "23f2001288@ds.study.iitm.ac.in"
 ---
+
+# Product Documentation
+
+---
+
+---
+background: "https://picsum.photos/1600/900"
+---
+
+# Background Image Slide
+This slide uses a YAML `background:` directive.
+
 
 
 # Summary
