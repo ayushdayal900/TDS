@@ -1,37 +1,38 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Quarterly Earnings Presentation</title>
+  <meta charset="utf-8">
+  <title>Quarterly Earnings Presentation</title>
 
-    <link rel="stylesheet" href="dist/reveal.css">
-    <link rel="stylesheet" href="dist/theme/black.css" id="theme">
+  <!-- RevealJS core + theme (CDN) -->
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/black.css" id="theme">
 
-    <!-- Syntax Highlighting -->
-    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+  <!-- Code highlight theme -->
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/plugin/highlight/monokai.css">
 
-    <script src="dist/reveal.js"></script>
-    <script src="plugin/markdown/markdown.js"></script>
-    <script src="plugin/notes/notes.js"></script>
-    <script src="plugin/highlight/highlight.js"></script>
+  <script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+  <script src="https://unpkg.com/reveal.js/plugin/markdown/markdown.js"></script>
+  <script src="https://unpkg.com/reveal.js/plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js/plugin/highlight/highlight.js"></script>
 </head>
 
 <body>
 <div class="reveal">
-<div class="slides">
+  <div class="slides">
 
-<!-- Slide 1 -->
-<section>
-    <h1>Quarterly Earnings Report</h1>
-    <p>Email: <strong>23f2001288@ds.study.iitm.ac.in</strong></p>
-    <aside class="notes">
+    <!-- Slide 1 -->
+    <section>
+      <h1>Quarterly Earnings Report</h1>
+      <p>Email: <strong>23f2001288@ds.study.iitm.ac.in</strong></p>
+      <aside class="notes">
         Welcome the audience and introduce the session.
-    </aside>
-</section>
+      </aside>
+    </section>
 
-<!-- Markdown Slide -->
-<section data-markdown>
-<textarea data-template>
+    <!-- Markdown Slide -->
+    <section data-markdown>
+      <textarea data-template>
 ## 🔹 Financial Overview (Markdown Example)
 
 - Revenue Growth: **20% YoY**
@@ -39,57 +40,57 @@
 - Market Expansion: **5 new regions**
 
 _This slide is written in Markdown._
-</textarea>
-<aside class="notes">
-Explain that this slide is generated via Markdown.
-</aside>
-</section>
+      </textarea>
+      <aside class="notes">
+        Explain that this slide is generated via Markdown.
+      </aside>
+    </section>
 
-<!-- Mathematical Formula Slide -->
-<section>
-    <h2>Financial Equation</h2>
-    <p>Profit Formula:</p>
-    <p>\( \text{Profit} = \text{Revenue} - \text{Expenses} \)</p>
-    <aside class="notes">
+    <!-- Mathematical Formula Slide -->
+    <section>
+      <h2>Financial Equation</h2>
+      <p>Profit Formula:</p>
+      <p>\( \text{Profit} = \text{Revenue} - \text{Expenses} \)</p>
+      <aside class="notes">
         Highlight how profit is calculated.
-    </aside>
-</section>
+      </aside>
+    </section>
 
-<!-- Fragments Animation Slide -->
-<section>
-    <h2>Quarterly Highlights</h2>
-    <ul>
+    <!-- Fragments Animation Slide -->
+    <section>
+      <h2>Quarterly Highlights</h2>
+      <ul>
         <li class="fragment">Revenue increased 20%</li>
         <li class="fragment">Customer base expanded</li>
         <li class="fragment">Cost optimization achieved</li>
-    </ul>
-    <aside class="notes">
+      </ul>
+      <aside class="notes">
         Reveal each highlight step-by-step.
-    </aside>
-</section>
+      </aside>
+    </section>
 
-<!-- Code Example Slide -->
-<section>
-    <h2>Financial Growth Calculator (Code Sample)</h2>
-    <pre><code class="language-js">
+    <!-- Code Example Slide -->
+    <section>
+      <h2>Financial Growth Calculator (Code Sample)</h2>
+      <pre><code class="language-js">
 function growth(previous, current) {
-    return ((current - previous) / previous) * 100;
+  return ((current - previous) / previous) * 100;
 }
-console.log(growth(100,120));
-    </code></pre>
-    <aside class="notes">
+console.log(growth(100, 120));
+      </code></pre>
+      <aside class="notes">
         Explain how simple logic calculates percentage growth.
-    </aside>
-</section>
+      </aside>
+    </section>
 
-</div>
+  </div>
 </div>
 
 <script>
-    Reveal.initialize({
-        hash: true,
-        plugins: [ RevealMarkdown, RevealNotes, RevealHighlight ]
-    });
+  Reveal.initialize({
+    hash: true,
+    plugins: [ RevealMarkdown, RevealNotes, RevealHighlight ]
+  });
 </script>
 
 </body>
