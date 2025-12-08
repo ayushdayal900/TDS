@@ -1,57 +1,96 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Quarterly Earnings Report</title>
-  <link rel="stylesheet" href="dist/reveal.css">
-  <link rel="stylesheet" href="dist/theme/black.css">
-  <script src="dist/reveal.js"></script>
+    <meta charset="utf-8">
+    <title>Quarterly Earnings Presentation</title>
+
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+    <!-- Syntax Highlighting -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
 </head>
+
 <body>
 <div class="reveal">
 <div class="slides">
 
+<!-- Slide 1 -->
 <section>
-  <h1>Quarterly Earnings Report</h1>
-  <p>Email: 23f2001288@ds.study.iitm.ac.in</p>
-  <aside class="notes">Welcome stakeholders</aside>
+    <h1>Quarterly Earnings Report</h1>
+    <p>Email: <strong>23f2001288@ds.study.iitm.ac.in</strong></p>
+    <aside class="notes">
+        Welcome the audience and introduce the session.
+    </aside>
 </section>
 
+<!-- Markdown Slide -->
 <section data-markdown>
 <textarea data-template>
-## Financial Overview
-Revenue Growth:
-- 2023: **15%**
-- 2024: **20%**
+## 🔹 Financial Overview (Markdown Example)
+
+- Revenue Growth: **20% YoY**
+- Operating Margin: **12%**
+- Market Expansion: **5 new regions**
+
+_This slide is written in Markdown._
 </textarea>
+<aside class="notes">
+Explain that this slide is generated via Markdown.
+</aside>
 </section>
 
+<!-- Mathematical Formula Slide -->
 <section>
-  <h2>Profit Equation</h2>
-  <p>\( \text{Profit} = \text{Revenue} - \text{Expenses} \)</p>
+    <h2>Financial Equation</h2>
+    <p>Profit Formula:</p>
+    <p>\( \text{Profit} = \text{Revenue} - \text{Expenses} \)</p>
+    <aside class="notes">
+        Highlight how profit is calculated.
+    </aside>
 </section>
 
+<!-- Fragments Animation Slide -->
 <section>
-  <h2>Code Sample</h2>
-  <pre><code class="language-js">
-function growth(r1, r2){
-  return ((r2-r1)/r1)*100
+    <h2>Quarterly Highlights</h2>
+    <ul>
+        <li class="fragment">Revenue increased 20%</li>
+        <li class="fragment">Customer base expanded</li>
+        <li class="fragment">Cost optimization achieved</li>
+    </ul>
+    <aside class="notes">
+        Reveal each highlight step-by-step.
+    </aside>
+</section>
+
+<!-- Code Example Slide -->
+<section>
+    <h2>Financial Growth Calculator (Code Sample)</h2>
+    <pre><code class="language-js">
+function growth(previous, current) {
+    return ((current - previous) / previous) * 100;
 }
-console.log(growth(100,120))
-  </code></pre>
-</section>
-
-<section>
-  <h2 class="fragment">Future Forecast</h2>
-  <p class="fragment">Expected CAGR: 18%</p>
-  <aside class="notes">Discuss projections</aside>
+console.log(growth(100,120));
+    </code></pre>
+    <aside class="notes">
+        Explain how simple logic calculates percentage growth.
+    </aside>
 </section>
 
 </div>
 </div>
 
 <script>
-Reveal.initialize();
+    Reveal.initialize({
+        hash: true,
+        plugins: [ RevealMarkdown, RevealNotes, RevealHighlight ]
+    });
 </script>
+
 </body>
 </html>
